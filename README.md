@@ -34,3 +34,8 @@ using js_of_ocaml, the Javascript interface for your cordova plugin.
 * cordova.platformId
 * cordova.platformVersion
 * cordova.version
+
+## Example
+
+An example is available
+[here](https://github.com/dannywillems/ocaml-cordova-example)
