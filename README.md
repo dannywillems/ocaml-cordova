@@ -1,6 +1,9 @@
-# ocaml-cordova-plugin
+# ocaml-cordova
 
-Create your own cordova plugin in OCaml.
+Binding to the *cordova* object available
+[here](https://github.com/apache/cordova-js) in the src directory.
+It allows you to create your cordova plugin entirely in OCaml by using the exec
+function. You also have access to the device version, the platform id, etc.
 
 ## Introduction
 
@@ -25,3 +28,9 @@ interesting to be able to develop his own cordova plugin using only **ocaml**.
 This repository aims to provide a simple way to do it by providing a binding to
 the *cordova* object. You develop entirely in OCaml and this module will create,
 using js_of_ocaml, the Javascript interface for your cordova plugin.
+
+## Available bindings
+
+* cordova.platformId
+* cordova.platformVersion
+* cordova.version
