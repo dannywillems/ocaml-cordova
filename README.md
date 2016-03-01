@@ -22,6 +22,6 @@ repository](https://github.com/dannywillems/ocaml-cordova-plugin-list).
 Instead of using js_of_ocaml to bind to existing cordova plugins, it's
 interesting to be able to develop his own cordova plugin using only **ocaml**.
 
-This repository aims to provide a simple way to do it. You develop entirely in
-OCaml and this module will create, using js_of_ocaml, the Javascript interface
-for your cordova plugin.
+This repository aims to provide a simple way to do it by providing a binding to
+the *cordova* object. You develop entirely in OCaml and this module will create,
+using js_of_ocaml, the Javascript interface for your cordova plugin.
