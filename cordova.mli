@@ -1,8 +1,16 @@
-class type cordova =
+(* -------------------------------------------------------------------------- *)
+(* Bindings to the cordova object *)
+class cordova : Ojs.t ->
   object
-    method platformId : Js.js_string Js.t Js.readonly_prop
-    method platformVersion : Js.js_string Js.t Js.readonly_prop
-    method version : Js.js_string Js.t Js.readonly_prop
-  end
+    inherit Ojs.obj
 
-val cordova : cordova Js.t
+    method platform_id      : string
+    method platform_version : string
+    method version          : string
+  end
+(* -------------------------------------------------------------------------- *)
+
+(* -------------------------------------------------------------------------- *)
+val t : unit -> cordova
+[@@js.get "cordova"]
+(* -------------------------------------------------------------------------- *)
