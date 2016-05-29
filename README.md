@@ -1,5 +1,7 @@
 # ocaml-cordova
 
+[![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova)
+
 Binding to the *cordova* object available
 [here](https://github.com/apache/cordova-js) in the src directory.
 
