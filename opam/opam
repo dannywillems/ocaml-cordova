@@ -10,7 +10,7 @@ dev-repo:     "https://github.com/dannywillems/ocaml-cordova"
 
 license:      "LGPL-3.0 with OCaml linking exception"
 
-version:      "dev"
+version:      "1.0"
 
 build: [make "build"]
 install: [make "install"]
