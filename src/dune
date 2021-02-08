@@ -1,0 +1,11 @@
+(rule
+ (targets cordova.ml)
+ (deps cordova.mli)
+ (action (run %{bin:gen_js_api} %{deps})))
+
+(library
+ (public_name cordova)
+ (modes byte)
+ (libraries gen_js_api)
+ ; (preprocess (pps gen_js_api))
+)
