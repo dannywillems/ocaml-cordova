@@ -1,4 +1,2 @@
-*.cma
-*.cmo
-*.cmi
-*.ml
+_opam
+_build
