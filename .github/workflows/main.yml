@@ -5,6 +5,20 @@ on:
   - push
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use OCaml 4.11.0
+        uses: avsm/setup-ocaml@v1
+        with:
+          ocaml-version: 4.11.0
+      - name: "Install ocamlformat.0.15.0"
+        run: opam install ocamlformat.0.15.0
+      - name: "Check lint"
+        run: opam exec -- ocamlformat --check src/*.ml*
+
   build:
     strategy:
       fail-fast: false
